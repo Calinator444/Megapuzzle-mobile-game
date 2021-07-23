@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Major.MainMenu">
+    <ContentPage.Content>
+
+        <StackLayout BackgroundColor="#ff4e33">
+
+
+            <Label Text="MegaPuzzle" TextColor="#ffff" FontSize="50" HorizontalOptions="CenterAndExpand"/>
+            <Image Source="Camera.png" HeightRequest="100"/>
+            <StackLayout HorizontalOptions="CenterAndExpand">
+                <Button Text="Create Puzzle" BackgroundColor="#7d2929" Clicked="Button_Clicked" TextColor="#ffff"/>
+                <Button Text="Browse Puzzles" BackgroundColor="#7d2929" Clicked="PuzzleBrowser" TextColor="#ffff"/>
+                <Button Text="Manage My Puzzles" BackgroundColor="#7d2929" Clicked="Button_Clicked_1" TextColor="#ffff"/>
+            </StackLayout>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

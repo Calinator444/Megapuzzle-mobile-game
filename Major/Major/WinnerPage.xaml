@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Major.WinnerPage">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#ffcb47">
+        <StackLayout HorizontalOptions="CenterAndExpand" BackgroundColor="#ffcb47">
+            <Label Text="Congratulations!" FontSize="40" TextColor="#fff" 
+             
+                />
+                <Label x:Name="winnerMessage" TextColor="#fff" 
+             
+                />
+                <Label x:Name="timeElapsed" TextColor="#fff"/>
+                <Button Clicked="Button_Clicked" Text="Finish" BackgroundColor="#ff9e66"  TextColor="#fff"/>
+
+        </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

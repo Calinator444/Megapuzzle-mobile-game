@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Major.Setup">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#ff4e33">
+            <Image x:Name="imgPreview"/>
+            <Label Text="Cuts lengthwise" TextColor="#fff"/>
+            <Slider x:Name ="xCuts" Maximum="7" Value="2" Minimum="2" ValueChanged="yCuts_ValueChanged" MinimumTrackColor="White" ThumbColor="White"/>
+            <Label Text="Cuts heightwise" TextColor="White"/>
+            <Slider x:Name="yCuts"  Maximum="7" Value="2" Minimum="2" ValueChanged="yCuts_ValueChanged" MinimumTrackColor="White" ThumbColor="White"/>
+            <Label Text="Upload" x:Name="uploadLabel" TextColor="#fff"/>
+            <CheckBox x:Name="upload" Color="White"/>
+            <Label Text="Hard mode" TextColor="White"/>
+            <CheckBox x:Name="HardMode" CheckedChanged="HardMode_CheckedChanged" Color="White"/>
+            <Label Text="Re-shuffle every (minutes):" TextColor="White"/>
+            <Picker x:Name="numPicker" TextColor="White"/>
+            <Button Text="Start Game" Clicked="Button_Clicked" BackgroundColor="#7d2929" TextColor="White"/>
+            
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

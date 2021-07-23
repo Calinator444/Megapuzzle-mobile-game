@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Major.myPuzzles">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#ff4e33">
+
+            <Label IsVisible="false" Text="You don't have any puzzles to view" x:Name="noPuzz"
+                   HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" TextColor="#fff"/>
+            <CarouselView x:Name="Carousel">
+
+            <CarouselView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout VerticalOptions="CenterAndExpand">
+                        <Image Source="{Binding thumbnail}" VerticalOptions="FillAndExpand"/>
+                        <!--<Label Text="{Binding thumbnail}"/>-->
+
+                        
+
+
+                    </StackLayout>
+                </DataTemplate>
+            </CarouselView.ItemTemplate>
+
+        </CarouselView>
+        <StackLayout>
+                <Button Text="Delete" Clicked="Button_Clicked" VerticalOptions="CenterAndExpand" BackgroundColor="#7d2929" TextColor="#fff"/>
+            
+        </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

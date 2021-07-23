@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Major.CreateAccount">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+            <Label Text="Account Creation"/>
+            <Entry x:Name="Username" Placeholder="Username"/>
+            <Entry x:Name="Password" IsPassword="True" Placeholder="Password"/>
+            <Entry x:Name="PassConfirm" IsPassword="True" Placeholder="Confirm Password"/>
+            <Button x:Name="AddAccount" Text="Create Account" Clicked="AddAccount_Clicked"/>
+            <Button x:Name="DeleteAccounts" Text="Delete Matching" Clicked="DeleteAccounts_Clicked"/>
+            <Button x:Name="Entries" Text="List Entries" Clicked="Entries_Clicked"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

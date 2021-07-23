@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Major.CreatePuzzle">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#ffcb47">
+            <Label Text="TAKE A PHOTO" FontSize="20" TextColor="#ffff"
+                
+                HorizontalOptions="CenterAndExpand" />
+            <Frame Margin="30" CornerRadius="50"  HasShadow="true" BackgroundColor="#ff9e66">
+                <ImageButton x:Name="frame" Source="Camera.png" Clicked="TakePhoto" BackgroundColor="#ff9e66"/>
+            </Frame>
+            <Label Text="TO START PLAYING" FontSize="20"
+                HorizontalOptions
+                   ="CenterAndExpand" TextColor="#ffff"
+                />
+            <Label Text="or" HorizontalOptions="CenterAndExpand" TextColor="White"/>
+
+            <Button Text="Select photo from library" Clicked="PickPhoto" BackgroundColor="#ff9e66" TextColor="#ffff" HorizontalOptions="CenterAndExpand"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

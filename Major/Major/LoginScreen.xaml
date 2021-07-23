@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Major.LoginScreen">
+    <StackLayout BackgroundColor="#48c3c7">
+    <StackLayout HorizontalOptions="CenterAndExpand">
+            <Label Text="Login to compete with other players" TextColor="#ffff" FontSize="20"/>
+
+
+        <Entry x:Name="Username" Placeholder="Username" TextColor="#ffff"/>
+            <Entry x:Name="Password" IsPassword="True" Placeholder="Password" TextColor="#ffff"/>
+            <Button Text="Login" Clicked="Login_Clicked" TextColor="#ffff" BackgroundColor="#416eb5"/>
+            <Button Text="Create Account" TextColor="#ffff" BackgroundColor="#416eb5" Clicked="Create_Account"/>
+                <Button Text="Play Offline" TextColor="#ffff" BackgroundColor="#416eb5" Clicked="Button_Clicked"/>
+            </StackLayout>
+    </StackLayout>
+
+</ContentPage>
